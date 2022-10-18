@@ -12,6 +12,7 @@ broadcast_frame = scapy.layers.l2.Ether(dst="ff:ff:ff:ff:ff:ff")
 broadcast_frame_with_arp =broadcast_frame / arp_req
 results = scapy.layers.l2.srp(broadcast_frame_with_arp, timeout=1,verbose=True)[0]
 output = []
+//printing output of ip and mac results
 for i in range(0, len(results)):
     // psrc stands for Source IP
     // hwsrc stands for Destination MAC Address
